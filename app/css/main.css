@@ -1,0 +1,159 @@
+@font-face {
+  font-family: "OpenSans";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/OpenSans/OpenSans-Regular.eot");
+  src: url("../fonts/OpenSans/OpenSans-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans/OpenSans-Regular.woff") format("woff"), url("../fonts/OpenSans/OpenSans-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "OpenSans";
+  font-weight: normal;
+  font-style: italic;
+  src: url("../fonts/OpenSans/OpenSans-Italic.eot");
+  src: url("../fonts/OpenSans/OpenSans-Italic.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans/OpenSans-Italic.woff") format("woff"), url("../fonts/OpenSans/OpenSans-Italic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "OpenSans";
+  font-weight: bold;
+  font-style: normal;
+  src: url("../fonts/OpenSans/OpenSans-Bold.eot");
+  src: url("../fonts/OpenSans/OpenSans-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans/OpenSans-Bold.woff") format("woff"), url("../fonts/OpenSans/OpenSans-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "OpenSans";
+  font-weight: 800;
+  font-style: normal;
+  src: url("../fonts/OpenSans/OpenSans-ExtraBold.eot");
+  src: url("../fonts/OpenSans/OpenSans-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans/OpenSans-ExtraBold.woff") format("woff"), url("../fonts/OpenSans/OpenSans-ExtraBold.ttf") format("truetype");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "OpenSans", serif;
+}
+
+body, html {
+  height: 100%;
+  background-color: #f6f2f2;
+  box-sizing: border-box;
+  line-height: 1;
+}
+
+header {
+  height: 100%;
+  background-color: #f6f2f2;
+  overflow: hidden;
+}
+
+nav {
+  display: block;
+  width: 1249px;
+  height: 89px;
+  background-color: #313030;
+  margin: 29px auto;
+  position: relative;
+}
+
+nav ul {
+  width: 463px;
+  margin: auto;
+}
+
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  text-transform: uppercase;
+}
+
+nav ul li a {
+  display: block;
+  line-height: 89px;
+  color: #e0e0e0;
+  font-size: 14px;
+  font-weight: bold;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+nav ul li a:hover {
+  text-decoration: none;
+  color: #e0e0e0;
+  background-color: #ff3f40;
+}
+
+.organization .title h1 {
+  font-weight: 800;
+  font-size: 60px;
+  width: 50%;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  line-height: 72px;
+  color: #000;
+}
+
+.organization .title h1 span {
+  letter-spacing: 1.5px;
+}
+
+/*==========  Desktop First  ==========*/
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1200px) {
+  /**/
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+  /**/
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+  /**/
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 576px) {
+  /**/
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 320px) {
+  /**/
+}
+
+/*==========  Mobile First  ==========*/
+/* Custom, iPhone Retina */
+@media only screen and (min-width: 320px) {
+  .container {
+    padding: 0;
+    /**/
+  }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width: 576px) {
+  /**/
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width: 768px) {
+  /**/
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width: 992px) {
+  /**/
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width: 1200px) {
+  .container {
+    max-width: 1249px;
+    margin: 29px auto;
+    /**/
+  }
+}

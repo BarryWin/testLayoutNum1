@@ -1,0 +1,57 @@
+@import "vars"
+@import "fonts"
+*
+  margin: 0
+  padding: 0
+  font-family: "OpenSans", serif
+
+body, html
+  height: 100%
+  background-color: $bg-color
+  box-sizing: border-box
+  line-height: 1
+header
+  height: 100%
+  background-color: $bg-color
+  overflow: hidden
+nav
+  display: block
+  width: 1249px
+  height: 89px
+  background-color: #313030
+  margin: 29px auto
+  position: relative
+  ul
+    width: 463px
+    margin: auto
+  ul li
+    display: inline-block
+    list-style: none
+    text-transform: uppercase
+    a
+      display: block
+      line-height: 89px
+      color: #e0e0e0
+      font-size: 14px
+      font-weight: bold
+      padding-left: 24px
+      padding-right: 24px
+      &:hover
+        text-decoration: none
+        color: #e0e0e0
+        background-color: #ff3f40
+.organization
+  .title
+    h1
+      font-weight: 800
+      font-size: 60px
+      width: 50%
+      letter-spacing: 6px
+      text-transform: uppercase
+      line-height: 72px
+      color: #000
+      span
+        letter-spacing: 1.5px
+
+
+@import "media"
