@@ -1,5 +1,11 @@
 @import "vars"
 @import "fonts"
+%h2-style
+  opacity: 0.8
+  color: #000000
+  font-family: "OpenSans", serif
+  font-size: 42px
+  font-weight: bold
 *
   margin: 0
   padding: 0
@@ -7,13 +13,12 @@
 
 body, html
   height: 100%
-  background-color: $bg-color
   box-sizing: border-box
   line-height: 1
 header
-  height: 100%
   background-color: $bg-color
   overflow: hidden
+  height: 688px
 nav
   display: block
   width: 1249px
@@ -22,7 +27,7 @@ nav
   margin: 29px auto
   position: relative
   ul
-    width: 463px
+    width: 465px
     margin: auto
   ul li
     display: inline-block
@@ -41,17 +46,103 @@ nav
         color: #e0e0e0
         background-color: #ff3f40
 .organization
+  div:last-child
+    float: right
   .title
+    display: inline-block
+    width: 50%
+    margin-top: 90px
     h1
       font-weight: 800
       font-size: 60px
-      width: 50%
       letter-spacing: 6px
       text-transform: uppercase
       line-height: 72px
       color: #000
       span
         letter-spacing: 1.5px
-
-
+    p
+      display: inline-block
+      margin-top: 6px
+      width: 512px
+      text-align: justify
+      font-family: "OpenSans", serif
+      line-height: 28px
+    .button
+      margin-top: 32px
+      text-decoration: none
+      display: inline-block
+      border-radius: 5px
+      color: #fff
+      background-color: #ff2d2d
+      width: 227px
+      height: 55px
+      font-size: 18px
+      font-weight: bold
+      line-height: 55px
+      text-transform: capitalize
+      text-align: center
+      position: relative
+      outline: none
+      transition: background-color .1s ease
+      cursor: pointer
+      &:focus, &:hover
+        text-decoration: none
+        color: #fff
+      &:hover
+        background-color: lighten(#ff2d2d, 5%)
+      &:active
+        background-color: darken(#ff2d2d, 5%)
+  .video
+    display: inline-block
+    margin-top: 103px
+    border-radius: 10px
+    box-shadow: 0 0 50px 20px #AAA
+.row.info
+  margin-top: 108px
+  h2
+    @extend %h2-style
+    line-height: 55px
+    text-transform: uppercase
+    letter-spacing: 0.42px
+  p
+    font-family: "OpenSans", serif
+    font-size: 16px
+    line-height: 28px
+    margin-top: 33px
+    width: 509px
+    text-align: justify
+  .button
+    margin-top: 35px
+    text-decoration: none
+    display: inline-block
+    border-radius: 5px
+    border: 2px solid #ff0000
+    color: #ff2d2d
+    width: 227px
+    height: 55px
+    font-size: 18px
+    font-weight: bold
+    line-height: 55px
+    text-transform: capitalize
+    text-align: center
+    position: relative
+    outline: none
+    transition: background-color .1s ease
+    cursor: pointer
+    &:focus
+      text-decoration: none
+      color: #ff2d2d
+    &:hover
+      background-color: lighten(#ff2d2d, 5%)
+      color: #FFF
+      text-decoration: none
+    &:active
+      background-color: darken(#ff2d2d, 5%)
+  .icon
+    font-size: 41px
+    color: #ff3b4a
+  .sec
+    font-family: OpenSans, serif
+    font-size: 24px
 @import "media"
