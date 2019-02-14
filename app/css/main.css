@@ -233,7 +233,27 @@ nav ul li a:hover {
 
 .row.info .sec {
   font-family: OpenSans, serif;
+  width: 290px;
+}
+
+.row.info .sec h3 {
   font-size: 24px;
+  margin-top: 23px;
+}
+
+.row.info .sec p {
+  width: 100%;
+  font-size: 16px;
+  text-align: left;
+  line-height: 28px;
+  margin: 0;
+  margin-bottom: 38px;
+}
+
+.row.info .sec h3, .row.info .sec p {
+  opacity: 0.7;
+  color: #000;
+  font-weight: 400;
 }
 
 /*==========  Desktop First  ==========*/
