@@ -214,6 +214,8 @@ hr
     img
       height: 100%
       width: 100%
+    &:hover
+      box-shadow: 0 0 20px 3px #BBB
 #Team
   h2
     @extend %h2-style
@@ -235,6 +237,7 @@ hr
       display: inline-block
       img
         width: 321px
+        background-color: #EEE
     .details
       display: inline-block
       margin-left: 68px
@@ -271,16 +274,152 @@ hr
           letter-spacing: 0.9px
           &:hover
             color: lighten(#000000, 30%)
-    .others
-      margin-top: 67px
-      display: flex
-      justify-content: space-between
-      width: 855px
-      .person
-        background-color: #f5f0dd
-        width: 200px
-        height: 215px
-        img
-          width: 100%
-          height: 100%
+      .others
+        margin-top: 40px
+        display: flex
+        justify-content: space-between
+        align-items: flex-end
+        width: 855px
+        flex-wrap: wrap
+        .person
+          background-color: #f5f0dd
+          width: 200px
+          height: 215px
+          overflow: hidden
+          cursor: pointer
+          img
+            width: 100%
+            height: 100%
+          p
+            text-transform: capitalize
+            text-align: center
+            position: relative
+            top: 100%
+            width: 100%
+            padding: 4px
+            background-color: #000
+            opacity: 0.5
+            color: #FFF
+            font-weight: 400
+            transition: top 0.2s ease
+          &:hover p
+            top: -59px
+#subscr
+  display: table
+  position: relative
+  margin-top: 110px
+  width: 100%
+  height: 512px
+  background-color: #555
+  .search
+    text-align: center
+    color: #FFF
+    display: table-cell
+    vertical-align: middle
+    h2
+      opacity: 0.8
+      color: #FFF
+      font-size: 42px
+      font-weight: bold
+      line-height: 24px
+      letter-spacing: 1.05px
+    p
+      margin-top: 38px
+      opacity: 0.8
+      color: #FFF
+      font-size: 16px
+      font-weight: 400
+      line-height: 28px
+    form
+      margin-top: 55px
+      input[type='email']
+        width: 521px
+        height: 72px
+        border-radius: 5px
+        border: 0
+        background-color: #ffffff
+        padding: 36px
+        color: #2c2c2c
+        font-size: 16px
+      input[type='email']::-moz-placeholder
+        opacity: 0.7
+        color: #2c2c2c
+        font-size: 16px
+        font-weight: 400
+        line-height: 24px
+        letter-spacing: 0.4px
+      input[type='email']:-ms-input-placeholder
+        opacity: 0.7
+        color: #2c2c2c
+        font-size: 16px
+        font-weight: 400
+        line-height: 24px
+        letter-spacing: 0.4px
+      input[type='email']::-ms-input-placeholder
+        opacity: 0.7
+        color: #2c2c2c
+        font-size: 16px
+        font-weight: 400
+        line-height: 24px
+        letter-spacing: 0.4px
+      input[type='email']::-webkit-input-placeholder
+        opacity: 0.7
+        color: #2c2c2c
+        font-size: 16px
+        font-weight: 400
+        line-height: 24px
+        letter-spacing: 0.4px
+      input[type="submit"]
+        margin-left: 22px
+        border-radius: 5px
+        outline: 0
+        width: 214px
+        height: 72px
+        background-color: #ff2d2d
+        border: 0
+        color: #ffffff
+        font-size: 18px
+        font-weight: 700
+        text-transform: uppercase
+        letter-spacing: 0.32px
+        cursor: pointer
+        &:focus
+          text-decoration: none
+          color: #FFF
+        &:hover
+          background-color: lighten(#ff2d2d, 5%)
+          color: #FFF
+          text-decoration: none
+        &:active
+          background-color: darken(#ff2d2d, 5%)
+form.contact
+  margin-left: 165px
+  margin-top: 95px
+  width: 731px
+  h2
+    @extend %h2-style
+  p
+    margin-top: 33px
+    opacity: 0.7
+    color: #000000
+    font-size: 16px
+    font-weight: 400
+    line-height: 28px
+  hr
+    margin-left: 0
+  input
+    padding: 0 26px 0 26px
+  input[name="name"]
+    width: 339px
+    height: 69px
+    border: 0
+    background-color: #e6e6e6
+    color: #454545
+    border-radius: 14px
+    &:focus
+      border: 2px solid #007bff
+      border-radius: 14px
+      outline: none
+  input[name="email"]
+
 @import "media"
