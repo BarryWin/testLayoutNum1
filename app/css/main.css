@@ -576,7 +576,6 @@ hr {
 }
 
 form.contact {
-  margin-left: 165px;
   margin-top: 95px;
   width: 731px;
 }
@@ -599,18 +598,87 @@ form.contact input {
 }
 
 form.contact input[name="name"] {
+  display: inline-block;
   width: 339px;
   height: 69px;
   border: 0;
   background-color: #e6e6e6;
   color: #454545;
   border-radius: 14px;
+  float: left;
 }
 
 form.contact input[name="name"]:focus {
-  border: 2px solid #007bff;
+  -webkit-box-shadow: 0 0 2px 2px #007bff;
+  -moz-box-shadow: 0 0 2px 2px #007bff;
+  box-shadow: 0 0 2px 2px #007bff;
   border-radius: 14px;
   outline: none;
+}
+
+form.contact input[name="email"] {
+  display: inline-block;
+  width: 339px;
+  height: 69px;
+  border: 0;
+  background-color: #e6e6e6;
+  color: #454545;
+  border-radius: 14px;
+  float: right;
+}
+
+form.contact input[name="email"]:focus {
+  -webkit-box-shadow: 0 0 2px 2px #007bff;
+  -moz-box-shadow: 0 0 2px 2px #007bff;
+  box-shadow: 0 0 2px 2px #007bff;
+  border-radius: 14px;
+  outline: none;
+}
+
+form.contact textarea {
+  border: 0;
+  background-color: #e6e6e6;
+  margin-top: 45px;
+  width: 100%;
+  border-radius: 14px;
+  outline: none;
+  padding: 36px;
+  color: #454545;
+}
+
+form.contact textarea:focus {
+  -webkit-box-shadow: 0 0 2px 2px #007bff;
+  -moz-box-shadow: 0 0 2px 2px #007bff;
+  box-shadow: 0 0 2px 2px #007bff;
+  border-radius: 14px;
+  outline: none;
+}
+
+form.contact input[type="submit"] {
+  text-transform: uppercase;
+  border: 0;
+  margin-top: 45px;
+  height: 72px;
+  width: 100%;
+  background-color: #ff2d2d;
+  color: white;
+  border-radius: 8px;
+  outline: none;
+}
+
+form.contact input[type="submit"]:focus {
+  text-decoration: none;
+  color: #FFF;
+}
+
+form.contact input[type="submit"]:hover {
+  background-color: #ff4747;
+  color: #FFF;
+  text-decoration: none;
+}
+
+form.contact input[type="submit"]:active {
+  background-color: #ff1414;
 }
 
 /*==========  Desktop First  ==========*/
@@ -665,7 +733,7 @@ form.contact input[name="name"]:focus {
 }
 
 /* Large Devices, Wide Screens */
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1300px) {
   .container {
     max-width: 1249px;
     /**/
