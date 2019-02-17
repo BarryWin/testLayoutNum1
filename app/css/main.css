@@ -593,11 +593,15 @@ form.contact hr {
   margin-left: 0;
 }
 
-form.contact input {
+form.contact .inp {
+  width: 100%;
+}
+
+form.contact .inp input {
   padding: 0 26px 0 26px;
 }
 
-form.contact input[name="name"] {
+form.contact .inp input[name="name"] {
   display: inline-block;
   width: 339px;
   height: 69px;
@@ -605,18 +609,15 @@ form.contact input[name="name"] {
   background-color: #e6e6e6;
   color: #454545;
   border-radius: 14px;
-  float: left;
 }
 
-form.contact input[name="name"]:focus {
-  -webkit-box-shadow: 0 0 2px 2px #007bff;
-  -moz-box-shadow: 0 0 2px 2px #007bff;
-  box-shadow: 0 0 2px 2px #007bff;
+form.contact .inp input[name="name"]:focus {
+  border: 2px solid #007bff;
   border-radius: 14px;
   outline: none;
 }
 
-form.contact input[name="email"] {
+form.contact .inp input[name="email"] {
   display: inline-block;
   width: 339px;
   height: 69px;
@@ -627,31 +628,29 @@ form.contact input[name="email"] {
   float: right;
 }
 
-form.contact input[name="email"]:focus {
-  -webkit-box-shadow: 0 0 2px 2px #007bff;
-  -moz-box-shadow: 0 0 2px 2px #007bff;
-  box-shadow: 0 0 2px 2px #007bff;
+form.contact .inp input[name="email"]:focus {
+  border: 2px solid #007bff;
   border-radius: 14px;
   outline: none;
 }
 
-form.contact textarea {
-  border: 0;
-  background-color: #e6e6e6;
-  margin-top: 45px;
+form.contact .text {
   width: 100%;
+}
+
+form.contact .text .mywidth {
+  width: 100%;
+  margin-top: 45px;
+  box-sizing: border-box;
   border-radius: 14px;
   outline: none;
   padding: 36px;
   color: #454545;
+  resize: none;
 }
 
-form.contact textarea:focus {
-  -webkit-box-shadow: 0 0 2px 2px #007bff;
-  -moz-box-shadow: 0 0 2px 2px #007bff;
-  box-shadow: 0 0 2px 2px #007bff;
-  border-radius: 14px;
-  outline: none;
+form.contact .text .mywidth:focus {
+  border: 2px solid #007bff;
 }
 
 form.contact input[type="submit"] {
