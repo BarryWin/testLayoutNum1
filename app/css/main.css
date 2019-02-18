@@ -545,6 +545,8 @@ hr {
 }
 
 #subscr .search form input[type="submit"] {
+  position: relative;
+  top: 1px;
   margin-left: 22px;
   border-radius: 5px;
   outline: 0;
@@ -695,7 +697,7 @@ form.contact input[type="submit"]:active {
   position: absolute;
   bottom: 221px;
   right: 0;
-  width: 577px;
+  width: 500px;
   height: 481px;
   background-color: #2d2d2d;
   padding: 145px 79px;
@@ -757,7 +759,7 @@ form.contact input[type="submit"]:active {
 
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1300px) {
   /**/
 }
 
@@ -813,3 +815,11 @@ form.contact input[type="submit"]:active {
     /**/
   }
 }
+
+@media only screen and (min-width: 1400px) {
+  .contact-info {
+    width: 577px;
+  }
+}
+
+/**/
