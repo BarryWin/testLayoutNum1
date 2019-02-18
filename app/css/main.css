@@ -38,7 +38,7 @@
   src: url("../fonts/OpenSans/OpenSans-SemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans/OpenSans-SemiBold.woff") format("woff"), url("../fonts/OpenSans/OpenSans-SemiBold.ttf") format("truetype");
 }
 
-#info h2, #features h2, #Team h2, form.contact h2 {
+#info h2, #features h2, #Team h2, form.contact .title-form h2 {
   opacity: 0.8;
   color: #000000;
   font-family: "OpenSans", serif;
@@ -575,12 +575,20 @@ hr {
   background-color: #ff1414;
 }
 
+footer {
+  position: relative;
+}
+
 form.contact {
   margin-top: 95px;
   width: 731px;
 }
 
-form.contact p {
+form.contact .title-form {
+  width: 100%;
+}
+
+form.contact .title-form p {
   margin-top: 33px;
   opacity: 0.7;
   color: #000000;
@@ -589,7 +597,7 @@ form.contact p {
   line-height: 28px;
 }
 
-form.contact hr {
+form.contact .title-form hr {
   margin-left: 0;
 }
 
@@ -678,6 +686,70 @@ form.contact input[type="submit"]:hover {
 
 form.contact input[type="submit"]:active {
   background-color: #ff1414;
+}
+
+.contact-info {
+  position: absolute;
+  bottom: 221px;
+  right: 0;
+  width: 577px;
+  height: 481px;
+  background-color: #2d2d2d;
+  padding: 145px 79px;
+}
+
+.contact-info h4 {
+  text-transform: uppercase;
+  opacity: 0.8;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 0.32px;
+}
+
+.contact-info p {
+  margin-top: 25px;
+  width: 285px;
+  opacity: 0.8;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+#footer {
+  margin-top: 110px;
+  width: 100%;
+  height: 111px;
+  background-color: #313030;
+  padding: 0;
+}
+
+#footer .container p {
+  float: left;
+  color: #b8b8b8;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 111px;
+  margin: 0;
+}
+
+#footer .container .icons {
+  float: right;
+  line-height: 111px;
+}
+
+#footer .container .icons a {
+  text-decoration: none;
+}
+
+#footer .container .icons span .fas {
+  color: #ebebeb;
+}
+
+#footer .container .icons span .fab {
+  color: #313030;
+  font-size: 18px;
 }
 
 /*==========  Desktop First  ==========*/
