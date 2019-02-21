@@ -11,7 +11,7 @@ $(document).ready(function(){
             slideIndex = 1;
         }
         $('.slides')[slideIndex - 1].style.display = 'block';
-        setTimeout(showSlides, 6000);
+        setTimeout(showSlides, 8000);
     }
 
 });
