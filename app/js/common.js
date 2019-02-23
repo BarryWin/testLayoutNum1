@@ -1,4 +1,13 @@
 $(document).ready(function(){
+    $('.toggle-button').click(function () {
+        $('nav').slideToggle();
+    });
+    $(window).resize(function () {
+        if($(window).width()>576){
+            $('nav').removeAttr('style')
+        }
+    });
+
     var slideIndex = 0;
     showSlides();
 
