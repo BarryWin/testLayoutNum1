@@ -90,6 +90,7 @@ ul {
 
 .toggle-button:hover {
   background-color: #3e3d3d;
+  cursor: pointer;
 }
 
 nav {
@@ -372,6 +373,10 @@ hr {
 .gallery .pic:hover {
   -webkit-box-shadow: 0 0 20px 3px #BBB;
           box-shadow: 0 0 20px 3px #BBB;
+}
+
+#Team {
+  overflow: hidden;
 }
 
 #Team h2 {
@@ -906,9 +911,6 @@ form.contact input[type="submit"]:active {
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1300px) {
-  .organization .title {
-    margin-top: 50px;
-  }
   .organization .title h1 {
     font-size: 55px;
     line-height: 64px;
@@ -922,9 +924,31 @@ form.contact input[type="submit"]:active {
 /**/
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
-  /**/
+  header {
+    height: auto;
+  }
+  header .organization div:last-child {
+    text-align: center;
+  }
+  header .organization .title {
+    width: 100%;
+    text-align: center;
+    float: none;
+    margin-top: 50px;
+  }
+  header .organization .title h1 {
+    letter-spacing: 1.5px;
+  }
+  header .organization .video-wrapper {
+    float: none;
+    margin-bottom: 40px;
+  }
+  header .organization .video {
+    margin-top: 50px;
+  }
 }
 
+/**/
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
   /**/
@@ -953,6 +977,25 @@ form.contact input[type="submit"]:active {
     line-height: 60px;
     text-align: center;
     padding: 0;
+  }
+  .organization .title {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 50px;
+  }
+  .organization .title h1 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .organization .title p {
+    font-size: 14px;
+    width: 100%;
+  }
+  .organization .video-wrapper {
+    padding: 0 20px;
+  }
+  .organization .video {
+    width: 100%;
   }
 }
 
