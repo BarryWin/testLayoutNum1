@@ -850,15 +850,42 @@ form.contact input[type="submit"]:active {
 
 #footer .container .icons span .fas {
   color: #ebebeb;
+  -webkit-transition: color 0.2s ease;
+  -o-transition: color 0.2s ease;
+  transition: color 0.2s ease;
+}
+
+#footer .container .icons span:hover .fas {
+  color: white;
 }
 
 #footer .container .icons span .fab {
+  -webkit-transition: color 0.2s ease;
+  -o-transition: color 0.2s ease;
+  transition: color 0.2s ease;
   color: #313030;
   font-size: 18px;
+  position: relative;
 }
 
 #footer .container .icons span .fab:hover {
-  color: #585656;
+  color: #FFF;
+}
+
+#footer .container .icons span.google:hover .fas {
+  color: #DB4437;
+}
+
+#footer .container .icons span.facebook:hover .fas {
+  color: #4267B2;
+}
+
+#footer .container .icons span.in:hover .fas {
+  color: #0077B5;
+}
+
+#footer .container .icons span.twitter:hover .fas {
+  color: #00ACEE;
 }
 
 /*==========  Desktop First  ==========*/

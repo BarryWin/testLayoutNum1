@@ -565,11 +565,28 @@ form.contact
       span
         .fas
           color: #ebebeb
+          transition: color 0.2s ease
+        &:hover .fas
+          color: lighten(#ebebeb, 15%)
         .fab
+          transition: color 0.2s ease
           color: #313030
           font-size: 18px
+          position: relative
           &:hover
-            color: lighten(#313030, 15%)
+            color: #FFF
+      span.google
+        &:hover .fas
+          color: #DB4437
+      span.facebook
+        &:hover .fas
+          color: #4267B2
+      span.in
+        &:hover .fas
+          color: #0077B5
+      span.twitter
+        &:hover .fas
+          color: #00ACEE
 
 
 @import "media"
