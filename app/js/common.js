@@ -1,4 +1,5 @@
 $(document).ready(function(){
+    //responsive menu
     $('.toggle-button').click(function () {
         $('nav').slideToggle();
     });
@@ -8,6 +9,7 @@ $(document).ready(function(){
         }
     });
 
+    //slider
     var slideIndex = 0;
     showSlides();
 

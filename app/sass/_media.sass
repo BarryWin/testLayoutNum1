@@ -11,8 +11,19 @@
       width: 480px
       height: 320px
 
-/**/
 
+
+/**/
+@media only screen and (max-width: 1139px)
+  .organization
+    .title
+      h1
+        font-size: 55px
+        line-height: 64px
+    .video
+      width: 380px
+      height: 280px
+/**/
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px)
@@ -28,19 +39,77 @@
         margin-top: 50px
         h1
           letter-spacing: 1.5px
+        p
+          display: block
+          margin: auto
       .video-wrapper
         float: none
         margin-bottom: 40px
       .video
         margin-top: 50px
-
+  #info
+    margin-top: 70px
+    text-align: center
+    h2
+      text-align: center
+    p
+      display: block
+      margin:
+        top: 30px
+        left: auto
+        right: auto
+      width: auto
+      max-width: 509px
+    a.button
+      margin-top: 20px
+      margin-bottom: 45px
+  hr
+    margin-bottom: 45px
+  .menu
+    ul
+      margin: auto
+      font-size: 18px
+      li:not(:last-child)
+        margin-right: 12px
+  .gallery
+    .pic
+      width: 31%
+      height: auto
+      img
+        max-width: 100%
+  #Team
+    height: auto
+    h2
+      text-align: center
+    p
+      display: block
+      text-align: center
+      margin: auto
+    hr
+      margin: 25px auto 45px
 
 /**/
 
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px)
-	/**/
+  .menu
+    ul
+      margin: auto
+      li
+        width: 250px
+        display: block
+        &:not(:last-child)
+          margin: 0 auto 15px
+        &:last-child
+          margin: auto
+  .gallery
+    .pic
+      width: 48%
+      height: auto
+      img
+        max-width: 100%
+/**/
 
 
 /* Extra Small Devices, Phones */
@@ -65,8 +134,8 @@
   .organization
     .title
       padding:
-        left: 20px
-        right: 20px
+        left: 10px
+        right: 10px
       margin-top: 50px
       h1
         font-size: 30px
@@ -74,17 +143,37 @@
       p
         font-size: 14px
         width: 100%
+        max-width: 380px
     .video-wrapper
       padding: 0 20px
     .video
       width: 100%
-
+  #info
+    margin:
+      left: 10px
+      right: 10px
+  hr.separator
+    max-width: 320px
+  #features
+    margin: 8px
+    p
+      width: 90%
 
 /**/
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 320px)
-	/**/
+  .organization
+    .title
+      h1
+        font-size: 28px
+        line-height: 35px
+      p
+        line-height: 1.75
+    .video
+      width: 100%
+      height: 200px
+/**/
 
 
 /*==========  Mobile First  ==========*/
