@@ -17,7 +17,7 @@ $(document).ready(function(){
         for (var i = 0; i < $('.slides').length; i++){
             $('.slides')[i].style.display = 'none';
         }
-        slideIndex++
+        slideIndex++;
         if (slideIndex > 3){
             slideIndex = 1;
         }

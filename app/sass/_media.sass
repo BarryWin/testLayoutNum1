@@ -10,6 +10,13 @@
     .video
       width: 480px
       height: 320px
+  #Team
+    .people
+      .others
+        width: auto
+        .person
+          width: 22%
+          height: 170px
 
 
 
@@ -23,6 +30,22 @@
     .video
       width: 380px
       height: 280px
+  #Team
+    .people
+      .per-show
+        max-width: 45%
+        margin-bottom: 30px
+        img
+          max-width: 100%
+      .details
+        max-width: 45%
+      .others
+        margin-left: 0
+        clear: left
+        .person
+          width: 20%
+          height: 200px
+
 /**/
 
 /* Medium Devices, Desktops */
@@ -78,6 +101,7 @@
       img
         max-width: 100%
   #Team
+    overflow: visible
     height: auto
     h2
       text-align: center
@@ -87,7 +111,25 @@
       margin: auto
     hr
       margin: 25px auto 45px
-
+    .people
+      .details
+        text-align: center
+        p
+          margin-top: 20px
+          text-align: justify
+      .links
+        a
+          font-size: 16px
+        li
+          margin-right: 16px
+      .others
+        .person
+          width: 20%
+          height: 160px
+          overflow: visible
+          p
+            position: static
+            opacity: 0.8
 /**/
 
 
@@ -109,6 +151,23 @@
       height: auto
       img
         max-width: 100%
+  #Team
+    .people
+      .per-show
+        margin-right: 35px
+      .links
+        text-align: center
+        ul
+          margin-top: 18px
+        li
+          margin-right: 30px
+          margin-top: 5px
+      .others
+        .person
+          width: 22%
+          height: 130px
+        p
+          font-size: 14px
 /**/
 
 
@@ -158,6 +217,62 @@
     margin: 8px
     p
       width: 90%
+  #Team
+    margin: 10px
+    .people
+      .per-show
+        margin-right: 20px
+      .details
+        h3
+          font-size: 25px
+        p
+          font-size: 13px
+          line-height: 24px
+      .links
+        ul
+          margin-top: 10px
+        a
+          font-size: 14px
+      .others
+        .person
+          width: 97px
+          height: 105px
+          p
+            font-size: 12px
+/**/
+@media only screen and (max-width: 415px)
+  #Team
+    .people
+      .per-show
+        display: block
+        float: none
+        margin: auto
+        margin-bottom: 20px
+        max-width: 55%
+        img
+          max-width: 100%
+      .details
+        display: block
+        margin: auto
+        max-width: 80%
+        h3
+          font-size: 20px
+        p
+          margin-top: 10px
+          font-size: 12px
+          line-height: 20px
+      .links
+        ul
+          margin-top: 10px
+        li
+          margin-right: 15px
+          margin-top: 5px
+      .others
+        margin: auto
+        width: 250px
+        .person
+          margin-bottom: 40px
+
 
 /**/
 
@@ -206,7 +321,7 @@
 /**/
 
 /* Large Devices, Wide Screens */
-@media only screen and (min-width: 1300px)
+@media only screen and (min-width: 1301px)
   .container
     max-width: 1249px
     /**/

@@ -249,8 +249,9 @@ hr
   hr
     margin-left: 0
   .people
-    margin-top: 0
     .per-show
+      margin-right: 63px
+      float: left
       max-height: 460px
       display: inline-block
       img
@@ -258,10 +259,10 @@ hr
         background-color: #EEE
     .details
       display: inline-block
-      margin-left: 68px
       margin-top: 8px
       //height: 103px
       vertical-align: top
+      width: auto
       h3
         text-transform: uppercase
         opacity: 0.8
@@ -276,52 +277,53 @@ hr
         font-size: 16px
         font-weight: 400
         line-height: 28px
-      .links
-        ul
-          margin-top: 34px
-        li
-          margin-right: 30px
-          display: inline-block
-        a
-          text-decoration: none
-          opacity: 0.8
-          color: #000000
-          font-size: 18px
-          font-style: italic
-          line-height: 24px
-          letter-spacing: 0.9px
-          &:hover
-            color: lighten(#000000, 30%)
-      .others
-        margin-top: 40px
-        display: flex
-        justify-content: space-between
-        align-items: flex-end
-        width: 855px
-        flex-wrap: wrap
-        .person
-          background-color: #f5f0dd
-          width: 200px
-          height: 215px
-          overflow: hidden
-          cursor: pointer
-          img
-            width: 100%
-            height: 100%
-          p
-            text-transform: capitalize
-            text-align: center
-            position: relative
-            top: 100%
-            width: 100%
-            padding: 4px
-            background-color: #000
-            opacity: 0.5
-            color: #FFF
-            font-weight: 400
-            transition: top 0.2s ease
-          &:hover p
-            top: -59px
+    .links
+      ul
+        margin-top: 34px
+      li
+        margin-right: 30px
+        display: inline-block
+      a
+        text-decoration: none
+        opacity: 0.8
+        color: #000000
+        font-size: 18px
+        font-style: italic
+        line-height: 24px
+        letter-spacing: 0.9px
+        &:hover
+          color: lighten(#000000, 30%)
+    .others
+      margin-left: 68px
+      margin-top: 40px
+      display: flex
+      justify-content: space-between
+      align-items: flex-end
+      width: 855px
+      flex-wrap: wrap
+      .person
+        background-color: #f5f0dd
+        width: 200px
+        height: 215px
+        overflow: hidden
+        cursor: pointer
+        img
+          width: 100%
+          height: 100%
+        p
+          text-transform: capitalize
+          text-align: center
+          position: relative
+          top: 100%
+          width: 100%
+          padding: 4px
+          background-color: #000
+          opacity: 0.5
+          color: #FFF
+          font-weight: 400
+          transition: top 0.2s ease
+        &:hover p
+          top: -59px
 #subscr
   display: table
   position: relative

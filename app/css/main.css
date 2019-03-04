@@ -397,11 +397,9 @@ hr {
   margin-left: 0;
 }
 
-#Team .people {
-  margin-top: 0;
-}
-
 #Team .people .per-show {
+  margin-right: 63px;
+  float: left;
   max-height: 460px;
   display: inline-block;
 }
@@ -413,9 +411,9 @@ hr {
 
 #Team .people .details {
   display: inline-block;
-  margin-left: 68px;
   margin-top: 8px;
   vertical-align: top;
+  width: auto;
 }
 
 #Team .people .details h3 {
@@ -436,16 +434,16 @@ hr {
   line-height: 28px;
 }
 
-#Team .people .details .links ul {
+#Team .people .links ul {
   margin-top: 34px;
 }
 
-#Team .people .details .links li {
+#Team .people .links li {
   margin-right: 30px;
   display: inline-block;
 }
 
-#Team .people .details .links a {
+#Team .people .links a {
   text-decoration: none;
   opacity: 0.8;
   color: #000000;
@@ -455,11 +453,12 @@ hr {
   letter-spacing: 0.9px;
 }
 
-#Team .people .details .links a:hover {
+#Team .people .links a:hover {
   color: #4d4d4d;
 }
 
-#Team .people .details .others {
+#Team .people .others {
+  margin-left: 68px;
   margin-top: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -475,7 +474,7 @@ hr {
       flex-wrap: wrap;
 }
 
-#Team .people .details .others .person {
+#Team .people .others .person {
   background-color: #f5f0dd;
   width: 200px;
   height: 215px;
@@ -483,12 +482,12 @@ hr {
   cursor: pointer;
 }
 
-#Team .people .details .others .person img {
+#Team .people .others .person img {
   width: 100%;
   height: 100%;
 }
 
-#Team .people .details .others .person p {
+#Team .people .others .person p {
   text-transform: capitalize;
   text-align: center;
   position: relative;
@@ -504,7 +503,7 @@ hr {
   transition: top 0.2s ease;
 }
 
-#Team .people .details .others .person:hover p {
+#Team .people .others .person:hover p {
   top: -59px;
 }
 
@@ -918,6 +917,13 @@ form.contact input[type="submit"]:active {
     width: 480px;
     height: 320px;
   }
+  #Team .people .others {
+    width: auto;
+  }
+  #Team .people .others .person {
+    width: 22%;
+    height: 170px;
+  }
 }
 
 /**/
@@ -929,6 +935,24 @@ form.contact input[type="submit"]:active {
   .organization .video {
     width: 380px;
     height: 280px;
+  }
+  #Team .people .per-show {
+    max-width: 45%;
+    margin-bottom: 30px;
+  }
+  #Team .people .per-show img {
+    max-width: 100%;
+  }
+  #Team .people .details {
+    max-width: 45%;
+  }
+  #Team .people .others {
+    margin-left: 0;
+    clear: left;
+  }
+  #Team .people .others .person {
+    width: 20%;
+    height: 200px;
   }
 }
 
@@ -998,6 +1022,7 @@ form.contact input[type="submit"]:active {
     max-width: 100%;
   }
   #Team {
+    overflow: visible;
     height: auto;
   }
   #Team h2 {
@@ -1010,6 +1035,28 @@ form.contact input[type="submit"]:active {
   }
   #Team hr {
     margin: 25px auto 45px;
+  }
+  #Team .people .details {
+    text-align: center;
+  }
+  #Team .people .details p {
+    margin-top: 20px;
+    text-align: justify;
+  }
+  #Team .people .links a {
+    font-size: 16px;
+  }
+  #Team .people .links li {
+    margin-right: 16px;
+  }
+  #Team .people .others .person {
+    width: 20%;
+    height: 160px;
+    overflow: visible;
+  }
+  #Team .people .others .person p {
+    position: static;
+    opacity: 0.8;
   }
 }
 
@@ -1035,6 +1082,26 @@ form.contact input[type="submit"]:active {
   }
   .gallery .pic img {
     max-width: 100%;
+  }
+  #Team .people .per-show {
+    margin-right: 35px;
+  }
+  #Team .people .links {
+    text-align: center;
+  }
+  #Team .people .links ul {
+    margin-top: 18px;
+  }
+  #Team .people .links li {
+    margin-right: 30px;
+    margin-top: 5px;
+  }
+  #Team .people .others .person {
+    width: 22%;
+    height: 130px;
+  }
+  #Team .people .others p {
+    font-size: 14px;
   }
 }
 
@@ -1096,6 +1163,73 @@ form.contact input[type="submit"]:active {
   #features p {
     width: 90%;
   }
+  #Team {
+    margin: 10px;
+  }
+  #Team .people .per-show {
+    margin-right: 20px;
+  }
+  #Team .people .details h3 {
+    font-size: 25px;
+  }
+  #Team .people .details p {
+    font-size: 13px;
+    line-height: 24px;
+  }
+  #Team .people .links ul {
+    margin-top: 10px;
+  }
+  #Team .people .links a {
+    font-size: 14px;
+  }
+  #Team .people .others .person {
+    width: 97px;
+    height: 105px;
+  }
+  #Team .people .others .person p {
+    font-size: 12px;
+  }
+}
+
+/**/
+@media only screen and (max-width: 415px) {
+  #Team .people .per-show {
+    display: block;
+    float: none;
+    margin: auto;
+    margin-bottom: 20px;
+    max-width: 55%;
+  }
+  #Team .people .per-show img {
+    max-width: 100%;
+  }
+  #Team .people .details {
+    display: block;
+    margin: auto;
+    max-width: 80%;
+  }
+  #Team .people .details h3 {
+    font-size: 20px;
+  }
+  #Team .people .details p {
+    margin-top: 10px;
+    font-size: 12px;
+    line-height: 20px;
+  }
+  #Team .people .links ul {
+    margin-top: 10px;
+  }
+  #Team .people .links li {
+    margin-right: 15px;
+    margin-top: 5px;
+  }
+  #Team .people .others {
+    margin: auto;
+    width: 250px;
+  }
+  #Team .people .others .person {
+    margin-bottom: 40px;
+  }
 }
 
 /**/
@@ -1148,7 +1282,7 @@ form.contact input[type="submit"]:active {
 
 /**/
 /* Large Devices, Wide Screens */
-@media only screen and (min-width: 1300px) {
+@media only screen and (min-width: 1301px) {
   .container {
     max-width: 1249px;
     /**/
