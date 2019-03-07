@@ -1109,11 +1109,21 @@ form.contact input[type="submit"]:active {
     padding-left: 10px;
     padding-right: 10px;
   }
+  form.contact .title-form {
+    padding: 10px;
+  }
+  form.contact .title-form h2 {
+    text-align: center;
+  }
+  form.contact .title-form hr {
+    margin-right: auto;
+    margin-left: auto;
+  }
   form.contact .inp input[name="name"] {
-    width: 45%;
+    width: 47%;
   }
   form.contact .inp input[name="email"] {
-    width: 45%;
+    width: 47%;
   }
 }
 
@@ -1170,6 +1180,19 @@ form.contact input[type="submit"]:active {
     margin: auto;
     width: 80%;
     margin-top: 26px;
+  }
+  form.contact .inp input[name="name"] {
+    display: block;
+    width: 100%;
+    margin: auto;
+  }
+  form.contact .inp input[name="email"] {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    width: 100%;
+    float: none;
   }
 }
 
@@ -1278,6 +1301,19 @@ form.contact input[type="submit"]:active {
     height: 48px;
     width: 200px;
   }
+  #footer {
+    height: 125px;
+  }
+  #footer .container p {
+    float: none;
+    text-align: center;
+    line-height: 70px;
+  }
+  #footer .container .icons {
+    text-align: center;
+    float: none;
+    line-height: 20px;
+  }
 }
 
 /**/
@@ -1342,6 +1378,21 @@ form.contact input[type="submit"]:active {
     margin: 20px auto 0;
     height: 40px;
     width: 200px;
+  }
+  #footer {
+    height: 125px;
+  }
+  #footer .container p {
+    font-size: 13px;
+  }
+  #footer .container .icons {
+    text-align: center;
+    float: none;
+    line-height: 20px;
+  }
+  .contact-info {
+    padding-left: 50px;
+    padding-right: 50px;
   }
 }
 

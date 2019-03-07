@@ -170,15 +170,23 @@
       width: 992px
       margin-left: 0
   form.contact
+    .title-form
+      padding: 10px
+      h2
+        text-align: center
+      hr
+        margin:
+          right: auto
+          left: auto
     width: 100%
     padding:
       left: 10px
       right: 10px
     .inp
       input[name="name"]
-        width: 45%
+        width: 47%
       input[name="email"]
-        width: 45%
+        width: 47%
 
 
 /**/
@@ -230,6 +238,22 @@
         margin: auto
         width: 80%
         margin-top: 26px
+  form.contact
+    .inp
+      input[name="name"]
+        display: block
+        width: 100%
+        margin: auto
+      input[name="email"]
+        display: block
+        margin:
+          left: auto
+          right: auto
+          top: 20px
+        width: 100%
+        float: none
+
+
 /**/
 
 
@@ -320,6 +344,17 @@
           margin: 20px auto 0
           height: 48px
           width: 200px
+  #footer
+    height: 125px
+    .container
+      p
+        float: none
+        text-align: center
+        line-height: 70px
+      .icons
+        text-align: center
+        float: none
+        line-height: 20px
 /**/
 @media only screen and (max-width: 415px)
   #Team
@@ -374,7 +409,19 @@
           margin: 20px auto 0
           height: 40px
           width: 200px
-
+  #footer
+    height: 125px
+    .container
+      p
+        font-size: 13px
+      .icons
+        text-align: center
+        float: none
+        line-height: 20px
+  .contact-info
+    padding:
+      left: 50px
+      right: 50px
 /**/
 
 /* Custom, iPhone Retina */
