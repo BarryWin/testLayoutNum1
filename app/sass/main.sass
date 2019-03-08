@@ -17,6 +17,28 @@ body, html
   height: 100%
   box-sizing: border-box
   line-height: 1
+button.scrollTop
+  display: none
+  position: fixed
+  bottom: 40px
+  right: 40px
+  border-radius: 30px
+  padding: 12px 15px
+  color: #444
+  border: 0
+  font-family: OpenSans, serif
+  cursor: pointer
+  outline: 0
+  z-index: 20
+  opacity: 0.3
+  font-size: 14px
+  //transition: opacity .3s ease
+  &:hover
+    opacity: 1
+  .fas
+    color: #ff3f40
+    margin-left: 5px
+
 header
   background-color: $bg-color
   overflow: hidden
