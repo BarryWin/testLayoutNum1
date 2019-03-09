@@ -62,6 +62,10 @@ body, html {
   line-height: 1;
 }
 
+main {
+  overflow: hidden;
+}
+
 button.scrollTop {
   display: none;
   position: fixed;
@@ -1217,6 +1221,10 @@ form.contact input[type="submit"]:active {
     margin-top: 20px;
     width: 100%;
     float: none;
+  }
+  .animated {
+    -webkit-animation: none !important;
+    animation: none !important;
   }
 }
 

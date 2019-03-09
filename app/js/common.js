@@ -49,4 +49,7 @@ $(document).ready(function () {
         $('body, html').animate({scrollTop: destination}, 800);
         return false;
     });
+
+//wowPlugin
+    new WOW().init();
 });

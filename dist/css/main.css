@@ -62,6 +62,36 @@ body, html {
   line-height: 1;
 }
 
+main {
+  overflow: hidden;
+}
+
+button.scrollTop {
+  display: none;
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  border-radius: 30px;
+  padding: 12px 15px;
+  color: #444;
+  border: 0;
+  font-family: OpenSans, serif;
+  cursor: pointer;
+  outline: 0;
+  z-index: 20;
+  opacity: 0.3;
+  font-size: 14px;
+}
+
+button.scrollTop:hover {
+  opacity: 1;
+}
+
+button.scrollTop .fas {
+  color: #ff3f40;
+  margin-left: 5px;
+}
+
 header {
   background-color: #f6f2f2;
   overflow: hidden;
