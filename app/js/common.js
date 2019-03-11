@@ -52,4 +52,15 @@ $(document).ready(function () {
 
 //wowPlugin
     new WOW().init();
+
+//magnific-popup
+    $('.pic').magnificPopup({
+        type:'image',
+        gallery: {
+            enabled: true
+        },
+        removalDelay: 300,
+        mainClass: 'mfp-fade',
+    });
+
 });

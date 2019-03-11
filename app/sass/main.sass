@@ -1,8 +1,7 @@
 @import "vars"
 @import "fonts"
 %h2-style
-  opacity: 0.8
-  color: #000000
+  color: #333333
   font-family: "OpenSans", serif
   font-size: 42px
   font-weight: bold
@@ -253,6 +252,7 @@ hr
     width: 299px
     height: 291px
     img
+      cursor: pointer
       height: 100%
       width: 100%
     &:hover
@@ -627,6 +627,32 @@ form.contact
       span.twitter
         &:hover .fas
           color: #00ACEE
+
+//magnific-popup
+/* overlay at start */
+.mfp-fade.mfp-bg
+  opacity: 0
+  -webkit-transition: all 0.15s ease-out
+  -moz-transition: all 0.15s ease-out
+  transition: all 0.15s ease-out
+/* overlay animate in */
+.mfp-fade.mfp-bg.mfp-ready
+  opacity: 0.8
+/* overlay animate out */
+.mfp-fade.mfp-bg.mfp-removing
+  opacity: 0
+/* content at start */
+.mfp-fade.mfp-wrap .mfp-content
+  opacity: 0
+  -webkit-transition: all 0.15s ease-out
+  -moz-transition: all 0.15s ease-out
+  transition: all 0.15s ease-out
+/* content animate it */
+.mfp-fade.mfp-wrap.mfp-ready .mfp-content
+  opacity: 1
+/* content animate out */
+.mfp-fade.mfp-wrap.mfp-removing .mfp-content
+  opacity: 0
 
 
 @import "media"
