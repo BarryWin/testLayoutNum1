@@ -243,7 +243,6 @@ nav ul li a:hover {
 }
 
 #info p {
-  font-family: "OpenSans", serif;
   font-size: 16px;
   line-height: 28px;
   margin-top: 33px;
@@ -392,12 +391,13 @@ hr {
   background-color: #f5f0dd;
   width: 299px;
   height: 291px;
+  overflow: hidden;
 }
 
 .gallery .pic img {
   cursor: pointer;
   height: 100%;
-  width: 100%;
+  min-width: 100%;
 }
 
 .gallery .pic:hover {
@@ -1103,10 +1103,11 @@ form.contact input[type="submit"]:active {
   }
   .gallery .pic {
     width: 31%;
-    height: auto;
+    height: 230px;
   }
   .gallery .pic img {
-    max-width: 100%;
+    height: 100%;
+    min-width: 100%;
   }
   #Team {
     overflow: visible;
@@ -1209,10 +1210,11 @@ form.contact input[type="submit"]:active {
   }
   .gallery .pic {
     width: 48%;
-    height: auto;
+    height: 240px;
   }
   .gallery .pic img {
-    max-width: 100%;
+    height: 100%;
+    min-width: 100%;
   }
   #Team .people .per-show {
     margin-right: 35px;
@@ -1257,10 +1259,6 @@ form.contact input[type="submit"]:active {
     margin-top: 20px;
     width: 100%;
     float: none;
-  }
-  .animated {
-    -webkit-animation: none !important;
-    animation: none !important;
   }
 }
 
@@ -1321,6 +1319,17 @@ form.contact input[type="submit"]:active {
   }
   #features p {
     width: 90%;
+  }
+  .gallery {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .gallery .pic {
+    width: 230px;
+    height: 220px;
+  }
+  .gallery .pic img {
+    max-height: 100%;
   }
   #Team {
     margin: 10px;
@@ -1385,7 +1394,22 @@ form.contact input[type="submit"]:active {
 }
 
 /**/
+@media only screen and (max-width: 500px) {
+  .gallery .pic {
+    width: 186px;
+    height: 178px;
+  }
+}
+
+/**/
 @media only screen and (max-width: 415px) {
+  .gallery {
+    margin: 40px;
+  }
+  .gallery .pic {
+    width: 140px;
+    height: 130px;
+  }
   #Team .people .per-show {
     display: block;
     float: none;
@@ -1461,6 +1485,22 @@ form.contact input[type="submit"]:active {
   .contact-info {
     padding-left: 50px;
     padding-right: 50px;
+  }
+}
+
+/**/
+@media only screen and (max-width: 385px) {
+  .gallery {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+
+/**/
+@media only screen and (max-width: 340px) {
+  .gallery {
+    margin-left: 5px;
+    margin-right: 5px;
   }
 }
 

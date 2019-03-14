@@ -51,7 +51,10 @@ $(document).ready(function () {
     });
 
 //wowPlugin
-    new WOW().init();
+    if($(window).width()>768){
+        new WOW().init();
+    }
+
 
 //magnific-popup
     $('.pic').magnificPopup({
