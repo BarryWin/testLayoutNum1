@@ -39,8 +39,7 @@
 }
 
 #info h2, #features h2, #Team h2, form.contact .title-form h2 {
-  opacity: 0.8;
-  color: #000000;
+  color: #333333;
   font-family: "OpenSans", serif;
   font-size: 42px;
   font-weight: bold;
@@ -62,6 +61,100 @@ body, html {
   line-height: 1;
 }
 
+.preloader {
+  z-index: 20;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  display: block;
+  background: #2D2D2D;
+}
+
+.preloader p.percent {
+  z-index: 21;
+  display: inline-block;
+  position: absolute;
+  text-align: center;
+  height: 1em;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  color: #FFF;
+}
+
+.preloader .loader {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: inline-block;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+  position: absolute;
+  background-color: #ff3f40;
+}
+
+.preloader .loader, .preloader .loader:before, .preloader .loader:after {
+  -webkit-animation: 1.15s infinite ease-in-out;
+          animation: 1.15s infinite ease-in-out;
+}
+
+.preloader .loader:before,
+.preloader .loader:after {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+}
+
+.preloader .loader {
+  -webkit-animation: cssload-animation 1.15s infinite linear;
+          animation: cssload-animation 1.15s infinite linear;
+}
+
+@-webkit-keyframes cssload-animation {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    border-radius: 50%;
+  }
+  50% {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+    border-radius: 0;
+  }
+  100% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+    border-radius: 50%;
+  }
+}
+
+@keyframes cssload-animation {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    border-radius: 50%;
+  }
+  50% {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+    border-radius: 0;
+  }
+  100% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+    border-radius: 50%;
+  }
+}
+
 main {
   overflow: hidden;
 }
@@ -69,7 +162,7 @@ main {
 button.scrollTop {
   display: none;
   position: fixed;
-  bottom: 40px;
+  bottom: 80px;
   right: 40px;
   border-radius: 30px;
   padding: 12px 15px;
@@ -244,7 +337,6 @@ nav ul li a:hover {
 }
 
 #info p {
-  font-family: "OpenSans", serif;
   font-size: 16px;
   line-height: 28px;
   margin-top: 33px;
@@ -393,11 +485,13 @@ hr {
   background-color: #f5f0dd;
   width: 299px;
   height: 291px;
+  overflow: hidden;
 }
 
 .gallery .pic img {
+  cursor: pointer;
   height: 100%;
-  width: 100%;
+  min-width: 100%;
 }
 
 .gallery .pic:hover {
@@ -727,6 +821,7 @@ footer {
   position: relative;
   width: 100%;
   clear: both;
+  overflow: hidden;
 }
 
 form.contact {
@@ -937,6 +1032,59 @@ form.contact input[type="submit"]:active {
   color: #00ACEE;
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #999;
+}
+
+::-webkit-scrollbar-track-piece {
+  background-color: #ffffff;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 7px;
+}
+
+/* overlay at start */
+.mfp-fade.mfp-bg {
+  opacity: 0;
+  -webkit-transition: all 0.15s ease-out;
+  -o-transition: all 0.15s ease-out;
+  transition: all 0.15s ease-out;
+}
+
+/* overlay animate in */
+.mfp-fade.mfp-bg.mfp-ready {
+  opacity: 0.8;
+}
+
+/* overlay animate out */
+.mfp-fade.mfp-bg.mfp-removing {
+  opacity: 0;
+}
+
+/* content at start */
+.mfp-fade.mfp-wrap .mfp-content {
+  opacity: 0;
+  -webkit-transition: all 0.15s ease-out;
+  -o-transition: all 0.15s ease-out;
+  transition: all 0.15s ease-out;
+}
+
+/* content animate it */
+.mfp-fade.mfp-wrap.mfp-ready .mfp-content {
+  opacity: 1;
+}
+
+/* content animate out */
+.mfp-fade.mfp-wrap.mfp-removing .mfp-content {
+  opacity: 0;
+}
+
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1300px) {
@@ -1067,10 +1215,11 @@ form.contact input[type="submit"]:active {
   }
   .gallery .pic {
     width: 31%;
-    height: auto;
+    height: 230px;
   }
   .gallery .pic img {
-    max-width: 100%;
+    height: 100%;
+    min-width: 100%;
   }
   #Team {
     overflow: visible;
@@ -1173,10 +1322,11 @@ form.contact input[type="submit"]:active {
   }
   .gallery .pic {
     width: 48%;
-    height: auto;
+    height: 240px;
   }
   .gallery .pic img {
-    max-width: 100%;
+    height: 100%;
+    min-width: 100%;
   }
   #Team .people .per-show {
     margin-right: 35px;
@@ -1282,6 +1432,17 @@ form.contact input[type="submit"]:active {
   #features p {
     width: 90%;
   }
+  .gallery {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .gallery .pic {
+    width: 230px;
+    height: 220px;
+  }
+  .gallery .pic img {
+    max-height: 100%;
+  }
   #Team {
     margin: 10px;
   }
@@ -1345,7 +1506,22 @@ form.contact input[type="submit"]:active {
 }
 
 /**/
+@media only screen and (max-width: 500px) {
+  .gallery .pic {
+    width: 186px;
+    height: 178px;
+  }
+}
+
+/**/
 @media only screen and (max-width: 415px) {
+  .gallery {
+    margin: 40px;
+  }
+  .gallery .pic {
+    width: 140px;
+    height: 130px;
+  }
   #Team .people .per-show {
     display: block;
     float: none;
@@ -1421,6 +1597,22 @@ form.contact input[type="submit"]:active {
   .contact-info {
     padding-left: 50px;
     padding-right: 50px;
+  }
+}
+
+/**/
+@media only screen and (max-width: 385px) {
+  .gallery {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+
+/**/
+@media only screen and (max-width: 340px) {
+  .gallery {
+    margin-left: 5px;
+    margin-right: 5px;
   }
 }
 

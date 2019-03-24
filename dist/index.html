@@ -6,18 +6,26 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Макет</title>
+    <link rel="shortcut icon" href="img/websiteIcon/favicon.png" type="image/png">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="libs/Font-Awesome/css/all.min.css">
-    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/aos.css">
     <link rel="stylesheet" href="css/main.css">
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/wow.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/aos.js"></script>
     <script src="js/common.js" type="text/javascript"></script>
 </head>
 <body>
 <button class="scrollTop">Top<i class="fas fa-arrow-up"></i></button>
 <header>
+    <div class="preloader">
+        <p class="percent"></p>
+        <div class="loader">
+        </div>
+    </div>
     <div class="toggle-button container"><p>Menu</p></div>
     <nav class="container">
         <ul>
@@ -41,9 +49,6 @@
                 <source src="img/videoplayback.webm" type="video/WebM">
                 Your browser does not support HTML5 video.
             </video>
-            <!--<iframe class="video" width="551" height="356" src="https://www.youtube.com/embed/m9guMB4kiRU?controls=2"-->
-                    <!--frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"-->
-                    <!--allowfullscreen></iframe>-->
         </div>
     </div>
 </header>
@@ -51,13 +56,13 @@
     <div class="container">
         <section id="info" class="row">
             <div class="col-lg">
-                <h2 class="wow fadeInDown" data-wow-duration="1.5s">do you know we can provide for you ?</h2>
-                <p class="wow fadeInUp" data-wow-duration="1.5s">Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eius-mod tempor incididunt ut labore
+                <h2 data-aos="fade-down" data-aos-duration="1200">do you know we can provide for you ?</h2>
+                <p data-aos="fade-up" data-aos-duration="1200">Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eius-mod tempor incididunt ut labore
                     et.Lorem ni ipsum dolor sit amet, consectetur adipis cing elit, ed doi eiusmod tempor incididunt ut
                     labore et.</p>
-                <a href="#" class="button wow fadeInUp" data-wow-duration="1.5s" >Learn more</a>
+                <div data-aos="fade-up" data-aos-duration="1200" data-aos-delay="50"><a href="#" class="button">Learn more</a></div>
             </div>
-            <div class="col-lg wow fadeInRight" data-wow-duration="1.5s" data-wow-offset="200" data-wow-delay=".3s">
+            <div class="col-lg" data-aos="fade-left" data-aos-offset="200" data-aos-duration="1200" data-aos-anchor-placement="top-bottom">
                 <div class="row justify-content-center">
                     <div class="col-sm-6 sec">
                         <i class="fa fa-cog icon"></i>
@@ -90,7 +95,7 @@
             </div>
         </section>
         <hr class="separator">
-        <section id="features">
+        <section id="features" data-aos="zoom-in-up" data-aos-duration="1200" data-aos-delay="200">
             <h2>
                 feature products
             </h2>
@@ -107,14 +112,14 @@
                 </ul>
             </div>
             <div class="gallery">
-                <div class="pic"><img src="img/laptop.jpg" alt="laptop"></div>
-                <div class="pic"><img src="img/laptop.jpg" alt=""></div>
-                <div class="pic"><img src="img/laptop.jpg" alt=""></div>
-                <div class="pic"><img src="img/laptop.jpg" alt=""></div>
-                <div class="pic"><img src="img/laptop.jpg" alt=""></div>
-                <div class="pic"><img src="img/laptop.jpg" alt=""></div>
-                <div class="pic"><img src="img/laptop.jpg" alt=""></div>
-                <div class="pic"><img src="img/laptop.jpg" alt=""></div>
+                <div class="pic" href="img/laptop.jpg"><img src="img/laptop.jpg" alt="laptop"></div>
+                <div class="pic" href="img/laptop.jpg"><img src="img/laptop.jpg" alt=""></div>
+                <div class="pic" href="img/another-laptop.jpg"><img src="img/another-laptop.jpg" alt=""></div>
+                <div class="pic" href="img/another-laptop.jpg"><img src="img/another-laptop.jpg" alt=""></div>
+                <div class="pic" href="img/another-laptop.jpg"><img src="img/another-laptop.jpg" alt=""></div>
+                <div class="pic" href="img/another-laptop.jpg"><img src="img/another-laptop.jpg" alt=""></div>
+                <div class="pic" href="img/home-office.jpg"><img src="img/home-office.jpg" alt=""></div>
+                <div class="pic" href="img/home-office.jpg"><img src="img/home-office.jpg" alt=""></div>
             </div>
         </section>
         <section id="Team">
@@ -123,7 +128,7 @@
                 Ux , print template.</p>
             <hr>
             <div class="people">
-                <div class="per-show"><img src="img/people/s1200.png" alt=""></div>
+                <div class="per-show" data-aos="fade-right" data-aos-duration="1500" data-aos-offset="50"><img src="img/people/s1200.png" alt=""></div>
                 <div class="details">
                     <h3>mark waugh</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed dooing eiusmod tempor incididut
@@ -138,19 +143,19 @@
                         </ul>
                     </div>
                     <div class="others">
-                        <div class="person">
+                        <div class="person" data-aos="flip-left" data-aos-duration="1600" data-aos-delay="50">
                             <img src="img/people/Person.Ashley.jpg" alt="">
                             <p>Ashley Carlson</p>
                         </div>
-                        <div class="person">
+                        <div class="person" data-aos="flip-left" data-aos-duration="1700" data-aos-delay="100">
                             <img src="img/people/daniel-craig-james-bond-007.jpg" alt="">
                             <p>daniel craig</p>
                         </div>
-                        <div class="person">
+                        <div class="person" data-aos="flip-left" data-aos-duration="1800" data-aos-delay="150">
                             <img src="img/people/daniel-craig-james-bond-007.jpg" alt="">
                             <p>daniel craig</p>
                         </div>
-                        <div class="person">
+                        <div class="person" data-aos="flip-left" data-aos-duration="1900" data-aos-delay="200">
                             <img src="img/people/daniel-craig-james-bond-007.jpg" alt="">
                             <p>daniel craig</p>
                         </div>
@@ -179,7 +184,7 @@
 
 <footer>
     <div class="container">
-        <form action="#" class="contact">
+        <form action="#" class="contact" data-aos="fade-right" data-aos-duration="1500">
             <div class="title-form">
                 <h2>get in touch</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eiusmod tempor incididunt ut labore
@@ -197,7 +202,7 @@
             <input type="submit" value="Send message" onclick="event.preventDefault()">
         </form>
     </div>
-    <div class="contact-info">
+    <div class="contact-info" data-aos="fade-left" data-aos-duration="1200">
         <h4>contact info</h4>
         <p>Jalalabad 24 / A, Ambaarkhana, Sylhet,
             Bangladesh</p>
